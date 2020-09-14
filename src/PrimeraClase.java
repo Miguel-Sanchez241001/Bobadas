@@ -5,6 +5,7 @@ public class PrimeraClase {
 
     public static void main(String args[]) {
         Scanner obj = new Scanner(System.in);
+        //conversor de numero decimales a binarios casero
         System.out.println("Ingrese un numero a convertir en binario");
         int num = obj.nextInt();
         System.out.println("Ingrese la potencia limite");
