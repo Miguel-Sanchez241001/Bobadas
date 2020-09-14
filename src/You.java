@@ -18,7 +18,7 @@ public class You {
         int altura = obj.nextInt();
         System.out.println("Su numero es " + altura);
 
-        for (int i = altura; i >= 1; i = i - 1) {
+        for (int i = altura; i >= 1; i--) {
 
             for (int j = 0; j < i; j++) {
                 System.out.print("*");
