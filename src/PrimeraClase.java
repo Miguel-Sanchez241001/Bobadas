@@ -8,6 +8,10 @@ public class PrimeraClase {
         //conversor de numero decimales a binarios casero
         System.out.println("Ingrese un numero a convertir en binario");
         int num = obj.nextInt();
+        System.out.println(binario(num));
+    }
+
+    private static String binario(int num) {
         char v = '1', f = '0';
         String s = " ";
         String bin = "";
@@ -26,10 +30,8 @@ public class PrimeraClase {
                 aux = aux / 2;
             } else {
                 i = 4;
-                System.out.println(bin);
             }
         }
-
-    }
-
+       return bin;
+    }  
 }
