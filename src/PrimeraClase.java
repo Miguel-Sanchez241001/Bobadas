@@ -8,16 +8,14 @@ public class PrimeraClase {
         //conversor de numero decimales a binarios casero
         System.out.println("Ingrese un numero a convertir en binario");
         int num = obj.nextInt();
-        System.out.println("Ingrese la potencia limite");
-        int exp=obj.nextInt();
         char v = '1', f = '0';
-          String s = " ";
-        String bin ="";
+        String s = " ";
+        String bin = "";
         int aux = 1;
-        for (int i = 1; i <= exp; i++) {
-            aux=aux*2;
-        }
-       for (int i = 0; i <2; i--) {
+      while(num>=aux){
+      aux=aux*2;
+      }
+        for (int i = 0; i < 2; i--) {
             if (aux != 0) {
                 if (num >= aux) {
                     num = num - aux;
@@ -26,14 +24,12 @@ public class PrimeraClase {
                     bin = bin + f + s;
                 }
                 aux = aux / 2;
-            }else{
-            i=4;
+            } else {
+                i = 4;
                 System.out.println(bin);
             }
-       }
-        
-    
-    
+        }
+
     }
 
 }
