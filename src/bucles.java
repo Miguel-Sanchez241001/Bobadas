@@ -14,27 +14,39 @@ import javax.swing.JOptionPane;
 public class bucles {
 
     public static void main(String args[]) {
-            Scanner obj=new Scanner(System.in);
-            int intentos=0;
-            System.out.println("Comencemos a jugar adivina el numero entre 1 y 100");
-            
-            //90=(maximovalor-minimovalor de la secuencia)
-            //10=minimovalor
-            int randon=(int)(Math.random()*90+10);
-         
-            
-           int num=0;
-            while(randon!=num){
+        Scanner obj = new Scanner(System.in);
+        int intentos = 0;
+        System.out.println("Comencemos a jugar adivina el numero entre 1 y 100");
+
+        //90=(maximovalor-minimovalor de la secuencia)
+        //10=minimovalor
+        int randon = (int) (Math.random() * 90 + 10);
+
+        int num = 0;
+        while (randon != num) {
             intentos++;
-                System.out.println("Introduce un numero");
-            num=obj.nextInt();
-                if (num>randon) {
-                    System.out.println("Mas bajo");
-                }else if(num<randon){
-                    System.out.println("Mas alto");
-                }
+            System.out.println("Introduce un numero");
+            num = obj.nextInt();
+            if (num > randon) {
+                System.out.println("Mas bajo");
+            } else if (num < randon) {
+                System.out.println("Mas alto");
             }
-            System.out.println("Correcto\nLo has conseguido en "+intentos+" intentos");
+        }
+        System.out.println("Correcto\nLo has conseguido en " + intentos + " intentos");
+        /*
+        cambiando a bulce
+        
+        do {
+            intentos++;
+            System.out.println("Introduce un numero");
+            num = obj.nextInt();
+            if (num > randon) {
+                System.out.println("Mas bajo");
+            } else if (num < randon) {
+                System.out.println("Mas alto");
+            }
+        }while (randon != num) ;
      /*   String clave = "manolito";
         String pass = "";
         int aux = 1;
@@ -53,10 +65,7 @@ public class bucles {
             
         }
         System.out.println(mensaje);*/
-    
-    
-    
-    
+
     }
 
 }

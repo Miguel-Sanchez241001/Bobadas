@@ -11,27 +11,24 @@ public class PrimeraClase {
         System.out.println(binario(num));
     }
 
-    private static String binario(int num) {
+ private static String binario(int num) {
         char v = '1', f = '0';
-        String s = " ";
         String bin = "";
         int aux = 1;
-      while(num>=aux){
-      aux=aux*2;
-      }
-        for (int i = 0; i < 2; i--) {
-            if (aux != 0) {
-                if (num >= aux) {
-                    num = num - aux;
-                    bin = bin + v + s;
-                } else {
-                    bin = bin + f + s;
-                }
-                aux = aux / 2;
-            } else {
-                i = 4;
-            }
+        while(num>=aux){
+            aux*=2;
         }
-       return bin;
-    }  
+        while (aux != 0){
+            if (num >= aux) {
+                num-=aux;
+                bin = bin + v + " ";
+            } else {
+                bin = bin + f + " ";
+            }
+                aux/=2;
+        }
+
+
+        return bin;
+    } 
 }
